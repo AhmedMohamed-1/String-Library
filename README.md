@@ -218,4 +218,121 @@ int main() {
     ```cpp
     Output: "Hello, ClsString!"
     ```
+    
+19. **JoinString**
+    ```cpp
+    string arr[] = {"Hello", "World"};
+    cout << ClsString::JoinString(arr, 2, " ");
+    ```
+    ```cpp
+    Output: Hello World
+    ```
+20. **JoinString**
+    ```cpp
+    vector<string> words1 = {"apple", "banana", "orange"};
+    vector<string> words2 = {"one", "two", "three", "four"};
+    vector<string> words3 = {"alpha", "beta", "gamma", "delta", "epsilon"};
+    
+    cout << ClsString::JoinString(words1, ", ");
+    cout << ClsString::JoinString(words2, "-");
+    cout << ClsString::JoinString(words3, " ");
+    ```
+    ```cpp
+    Output:        
+       "apple, banana, orange"
+       "one-two-three-four"
+       "alpha beta gamma delta epsilon"
+    ```
+21. **ReverseString**
+    ```cpp
+    cout << ClsString::ReverseString("Hello");
+    ```
+    ```cpp
+    Output: olleH
+    ```
+22. **IsVowel**
+    ```cpp
+    cout << (ClsString::IsVowel('a') ? "True" : "False");
+    ```
+    ```cpp
+    Output: True
+    ```
+23. **CountVowels**
+    ```cpp
+    cout << ClsString::CountVowels("Hello");
+    ```
+    ```cpp
+    Output: 2
+    ```
+24. **InverseLetterCase**
+    ```cpp
+    cout << ClsString::InverseLetterCase('a');
+    cout << ClsString::InverseLetterCase('B');
+    ```
+    ```
+    Output
+     A
+     b
+    ```
+25. **ReverseWordsInString**
+    ```cpp
+    cout << ClsString::ReverseWordsInString("Hello World");    
+    cout << ClsString::ReverseWordsInString("The quick brown fox");
+    cout << ClsString::ReverseWordsInString("123 456 789");
+    ```
+    ```cpp
+    Output:        
+       "olleH dlroW"
+       "ehT kciuq nworb xof"
+       "321 654 987"
+    ```
+
+## Contributing
+
+Thank you for considering contributing to the `ClsString.h` library! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+### How to Contribute
+
+1. **Fork the repository:** Click on the Fork button on the top right corner of this page to create a copy of this repository in your GitHub account.
+
+2. **Clone the repository:** Clone the forked repository to your local machine using the `git clone` command along with the URL of your fork.
+
+    ```bash
+    git clone https://github.com/your-username/ClsString.h.git
+    ```
+
+3. **Create a new branch:** Move to the repository's directory on your local machine and create a new branch with a descriptive name for your feature or fix.
+
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+4. **Make your changes:** Implement your feature or fix in the codebase. Ensure that your changes follow the coding style and conventions used in the project.
+
+5. **Commit your changes:** Once you've made your changes, commit them to your branch with a meaningful commit message.
+
+    ```bash
+    git commit -m "Add your commit message here"
+    ```
+
+6. **Push to your fork:** Push your changes to your forked repository on GitHub.
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+7. **Create a Pull Request:** Go to your forked repository on GitHub and click on the "New Pull Request" button to create a new pull request. Provide a descriptive title and detailed description for your changes. Once submitted, your pull request will be reviewed by the maintainers.
+
+### Guidelines
+
+- **Code Style:** Follow the existing code style and conventions used in the project.
+- **Tests:** If you're adding a new feature or fixing a bug, consider adding relevant tests to ensure the changes work as expected and do not introduce regressions.
+- **Documentation:** Update the documentation, including comments within the code and README file, to reflect any changes or additions.
+- **Commit Messages:** Write clear and concise commit messages that describe the purpose of your changes.
+
+### Feedback
+
+Feedback, suggestions, and bug reports are welcome! Feel free to open an issue to report any problems or share your ideas for improving the library.
+
+Thank you for contributing to `ClsString.h`! 🚀
 
